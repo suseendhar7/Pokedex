@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pokédex</string>
+    <string name="Pokemon">Pokémon</string>
+    <string name="item">Item</string>
+    <string name="location">Location</string>
+    <string name="type">Type</string>
+    <string name="transitionImage">Transition_Image</string>
+    <string name="region">Region</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

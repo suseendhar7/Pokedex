@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/poke_mon"
+            android:title="@string/Pokemon"
+            android:icon="@drawable/pokemon"/>
+        <item
+            android:id="@+id/item"
+            android:title="@string/item"
+            android:icon="@drawable/pokeball"/>
+        <item
+            android:id="@+id/location"
+            android:title="@string/location"
+            android:icon="@drawable/location"/>
+        <item
+            android:id="@+id/type"
+            android:title="@string/type"
+            android:icon="@drawable/type"/>
+        <item
+            android:id="@+id/region"
+            android:title="@string/region"
+            android:icon="@drawable/region"/>
+    </group>
+</menu>
