@@ -66,13 +66,17 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>  {
                 fade.excludeTarget(decor.findViewById(R.id.tool_bar), true);
                 activity.getWindow().setEnterTransition(fade);
                 activity.getWindow().setExitTransition(fade);
-                Intent i = new Intent(context, pokemon_desc.class);
                 ActivityOptionsCompat compat = ActivityOptionsCompat.makeSceneTransitionAnimation
                         ((Activity) context, holder.imageView, Objects.requireNonNull(ViewCompat.getTransitionName(holder.imageView)));
-                i.putExtra("name", corr);
-                i.putExtra("url", pokemon.get(position).getUrl());
-                i.putExtra("image_url", urls.get(position));
-                context.startActivity(i, compat.toBundle());
+
+                String[] x = urls.get(position).split("/");
+                if (x[x.length - 2].equals("pokemon")) {
+                    Intent i = new Intent(context, pokemon_desc.class);
+                    i.putExtra("name", corr);
+                    i.putExtra("url", pokemon.get(position).getUrl());
+                    i.putExtra("image_url", urls.get(position));
+                    context.startActivity(i, compat.toBundle());
+                }
             }
         });
     }

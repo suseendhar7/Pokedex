@@ -43,6 +43,7 @@ public class fetch_data extends AppCompatActivity {
                 .build();
         recyclerView = findViewById(R.id.rl2);
         sub_adapter = new sub_adapter(this);
+        sub_adapter.setActivity(this);
         recyclerView.setAdapter(sub_adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         pokeApi pokeApi = retrofit.create(com.example.task3.pokeApi.class);

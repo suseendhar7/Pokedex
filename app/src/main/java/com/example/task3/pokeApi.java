@@ -26,4 +26,7 @@ public interface pokeApi {
 
     @GET("type/{num}")
     Call<Type_Modal_Class> getTypeData(@Path("num") int number);
+
+    @GET("pokemon/{num}")
+    Call<poke_info_modal_class> getPokeData(@Path("num") String  num);
 }

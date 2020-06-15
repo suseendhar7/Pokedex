@@ -43,10 +43,6 @@ public class Type_Modal_Class {
         return pokemon;
     }
 
-    public List<poke.Pokemon> getMoves() {
-        return moves;
-    }
-
     public class dr {
         private List<poke.Pokemon> double_damage_from = null;
         private List<poke.Pokemon> double_damage_to = null;

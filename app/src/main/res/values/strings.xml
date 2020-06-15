@@ -4,6 +4,8 @@
     <string name="item">Item</string>
     <string name="location">Location</string>
     <string name="type">Type</string>
+    <string name="ability">Abilities</string>
+    <string name="stats">Stats</string>
     <string name="transitionImage">Transition_Image</string>
     <string name="region">Region</string>
     <string name="open">Open</string>
